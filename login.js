@@ -82,7 +82,7 @@
     "color:#fff;font:inherit;font-size:.9rem;text-align:left;text-decoration:none;transition:background .2s,transform .2s}",
     "#tl .tl-item:hover{background:rgba(255,255,255,.12);transform:translateX(3px)}",
     "#tl .tl-item svg{width:18px;height:18px;flex:none}",
-    "#tl .tl-item.out{color:#ff8fa3}",
+    "#tl .tl-item.out{color:#8fdcff}",
 
     "@media (max-width:520px){#tl{top:16px;right:16px}#tl .tl-name{display:none}#tl .tl-btn.user{padding:0 12px 0 7px}}",
     "@media (prefers-reduced-motion:reduce){#tl *,#tl *::before,#tl *::after{animation:none!important;transition-duration:.01s!important}}"

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow">
+<title>天舞宙 | Profile</title>
+<meta name="description" content="天舞宙（そらぴよ）のプロフィールページ">
+<meta property="og:title" content="天舞宙 | Profile">
+<meta property="og:image" content="icon.jpg">
+<link rel="icon" href="icon.jpg">
+<link rel="stylesheet" href="style.css">
+<noscript><link rel="stylesheet" href="noscript.css"></noscript>
+</head>
+<body class="pl-lock">
+<div id="pl" aria-label="読み込み中">
+  <div class="pl-fl-wrap" aria-hidden="true"><span>✦</span><span>♡</span><span>★</span><span>✿</span><span>♪</span><span>✦</span><span>♡</span><span>★</span></div>
+  <div class="pl-center">
+    <div class="pl-wrap">
+      <svg class="pl-ring" viewBox="0 0 160 160" aria-hidden="true">
+        <defs><linearGradient id="plg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fe0ff"/><stop offset="1" stop-color="#c9b8ff"/></linearGradient></defs>
+        <circle class="pl-track" cx="80" cy="80" r="70"/>
+        <circle id="plbar" class="pl-bar" cx="80" cy="80" r="70" stroke-dasharray="439.82" stroke-dashoffset="439.82"/>
+      </svg>
+      <div class="pl-orbit" aria-hidden="true"><i>♥</i><i>★</i><i>✦</i></div>
+      <img class="pl-logo" src="icon.jpg" alt="" width="104" height="104" draggable="false">
+    </div>
+    <div class="pl-label" aria-hidden="true"><span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span><span>.</span><span>.</span><span>.</span></div>
+    <div id="plpct" class="pl-pct">0%</div>
+  </div>
+</div>
+<script src="loader.js"></script>
+
+<div class="bg" aria-hidden="true">
+  <iframe id="bgv" frameborder="0"
+    data-src="https://www.youtube.com/embed/yqatnoV_nQY?autoplay=1&mute=1&controls=0&loop=1&playlist=yqatnoV_nQY&modestbranding=1&playsinline=1&disablekb=1&fs=0&iv_load_policy=3&rel=0"
+    title="background video"
+    allow="autoplay; encrypted-media"
+    referrerpolicy="strict-origin-when-cross-origin"
+    tabindex="-1"></iframe>
+  <noscript><iframe src="https://www.youtube.com/embed/yqatnoV_nQY?autoplay=1&mute=1&controls=0&loop=1&playlist=yqatnoV_nQY&modestbranding=1&playsinline=1&disablekb=1&fs=0&rel=0" title="background video" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" tabindex="-1"></iframe></noscript>
+</div>
+<div class="overlay"></div>
+<div class="sparkles" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<main class="card">
+  <img id="icon" class="icon" src="icon.jpg" alt="天舞宙のアイコン" width="140" height="140">
+  <h1 id="title">天舞宙</h1>
+  <p class="sub">そらぴよ</p>
+
+  <dl class="profile">
+    <dt>誕生日</dt><dd>3月23日</dd>
+    <dt>年齢</dt><dd id="age">10億歳</dd>
+    <dt>推し</dt><dd id="oshi">山田ハジメ</dd>
+  </dl>
+
+  <h2>SNS</h2>
+  <div class="links">
+    <a href="https://www.tiktok.com/@sorapiyo_zeta" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a href="https://x.com/sorapiyochan" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+  </div>
+
+  <h2>一言</h2>
+  <p id="hitokoto" class="hitokoto">読み込み中…</p>
+  <p id="hitokoto-at" class="hitokoto-at"></p>
+
+  <h2>好きなもの</h2>
+  <ul class="tags like"><li>山田ハジメ</li></ul>
+
+  <h2>嫌いなもの</h2>
+  <ul class="tags dislike"><li>フォロワー限定のポイピク</li><li>ア⭕️ムクリニックの広告</li></ul>
+
+  <footer>© 2026 天舞宙. All rights reserved.</footer>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="bday" class="bday" hidden>🎂 Happy Birthday 天舞宙！ 🎉</div>
+<script src="config.js"></script>
+<script src="login.js"></script>
+<script src="gate.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

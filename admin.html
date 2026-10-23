@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>一言を更新</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<noscript><p class="nojs">JavaScriptを有効にしてください。</p></noscript>
+<div class="wrap">
+
+  <!-- ログイン（Google） -->
+  <div class="card" id="loginCard" hidden>
+    <h1>管理ログイン</h1>
+    <p class="sub"><a href="index.html">← プロフィールに戻る</a></p>
+    <a class="btn" id="gbtn" href="#">Googleでログイン</a>
+    <div class="status" id="loginStatus" role="status"></div>
+  </div>
+
+  <!-- パスキー認証 -->
+  <div class="card" id="pkCard" hidden>
+    <h1>パスキーで認証</h1>
+    <p class="sub">Googleログインは完了しました。続けてパスキーで本人確認してください。</p>
+    <button id="pkBtn" type="button">パスキーで認証する</button>
+    <div class="status" id="pkStatus" role="status"></div>
+  </div>
+
+  <!-- 編集画面 -->
+  <div id="editor" hidden>
+    <div class="card">
+      <h1>一言を更新 <span class="mode" id="modeBadge"></span></h1>
+      <p class="sub"><a href="index.html">← プロフィールに戻る</a>
+        <button id="logout" class="ghost right" type="button" hidden>ログアウト</button></p>
+
+      <div class="field">
+        <label for="text">新しい一言</label>
+        <textarea id="text" maxlength="120" placeholder="いまの気持ちとか、お知らせとか"></textarea>
+        <div class="row"><span id="current"></span><span id="count">0 / 120</span></div>
+      </div>
+
+      <button id="save" type="button">更新する</button>
+      <div class="status" id="status" role="status"></div>
+      <p class="note" id="note"></p>
+    </div>
+
+    <div class="card">
+      <h2>いまの表示</h2>
+      <div class="preview" id="preview">読み込み中…</div>
+    </div>
+
+    <div class="card">
+      <h2>過去の一言</h2>
+      <ul id="history"></ul>
+    </div>
+
+    <div class="card" id="pkManage" hidden>
+      <h2>パスキー</h2>
+      <p class="note">パスキーを1つでも登録すると、次回から「Googleログイン → パスキー認証」が必要になります。未登録のあいだは、Googleログインだけで入れます。</p>
+      <ul id="pkList"></ul>
+      <button id="pkAdd" type="button">このデバイスのパスキーを追加</button>
+      <div class="status" id="pkMsg" role="status"></div>
+    </div>
+  </div>
+
+</div>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

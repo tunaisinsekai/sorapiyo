@@ -1,0 +1,13 @@
+/*
+  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://*.workers.dev https://challenges.cloudflare.com; media-src 'self' https://files.catbox.moe; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://challenges.cloudflare.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), autoplay=(self "https://www.youtube.com")
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

@@ -5,7 +5,7 @@
    ・ログイン後  : アイコン + 名前 → 押すと「マイページ」「ログアウト」のメニュー */
 (function () {
   var CLIENT_ID = "tuna_16e45ac02c514116fb4d";
-  var REDIRECT  = "https://tunaisinbox.f5.si/";
+  var REDIRECT  = "https://sorapiyo.f5.si/";
   var SDK_URL   = "https://account.tunaisinbox.workers.dev/sdk.js";
   var ME_URL    = "https://account.tunaisinbox.workers.dev/me";
   var SCOPE     = "profile";
